@@ -11,16 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mars device
 $(call inherit-product, device/xiaomi/mars/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Evolution-X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := mars
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2102K1AC
-PRODUCT_NAME := arrow_mars
-
-ARROW_GAPPS := true
+PRODUCT_NAME := evolution_mars
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_SYSTEM_NAME := mars_global
